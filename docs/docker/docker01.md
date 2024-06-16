@@ -1,7 +1,7 @@
 ---
 layout: default
 title: docker 01
-parent: docker
+parent: Docker
 nav_order: 1
 ---
 

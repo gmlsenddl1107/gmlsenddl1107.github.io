@@ -1,7 +1,7 @@
 ---
 layout: default
 title: k8s 01
-parent: k8s
+parent: K8S
 nav_order: 1
 ---
 

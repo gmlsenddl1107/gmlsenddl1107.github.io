@@ -1,7 +1,7 @@
 ---
 layout: default
 title: tensorflow 01
-parent: tensorflow
+parent: Tensorflow
 nav_order: 1
 ---
 

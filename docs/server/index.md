@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 서버
+title: Server
 nav_order: 5
 has_children: true
 permalink: /docs/server
 ---
 
-# 서버
+# Server
 
 {: .fs-6 .fw-300 }
