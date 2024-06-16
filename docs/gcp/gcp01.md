@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GCP 01
-parent: gcp
+parent: GCP
 nav_order: 1
 ---
 

@@ -6,6 +6,6 @@ has_children: true
 permalink: /docs/docker
 ---
 
-# docker
+# Docker
 
 {: .fs-6 .fw-300 }

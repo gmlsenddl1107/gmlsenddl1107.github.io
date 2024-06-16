@@ -1,7 +1,7 @@
 ---
 layout: default
 title: pytorch 01
-parent: pytorch
+parent: Pytorch
 nav_order: 1
 ---
 
