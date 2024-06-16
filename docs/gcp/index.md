@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serving
-nav_order: 2
+title: GCP
+nav_order: 8
 has_children: true
-permalink: /docs/serving
+permalink: /docs/gcp
 ---
 
-# Serving
+# GCP
 
 {: .fs-6 .fw-300 }

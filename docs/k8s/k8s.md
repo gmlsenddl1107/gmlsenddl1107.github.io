@@ -1,8 +1,8 @@
 ---
 layout: default
-title: pytorch 01
-parent: pytorch
+title: k8s 01
+parent: k8s
 nav_order: 1
 ---
 
-pytorch 01
+# k8s 01

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serving
-nav_order: 2
+title: pytorch
+nav_order: 3
 has_children: true
-permalink: /docs/serving
+permalink: /docs/pytorch
 ---
 
-# Serving
+# pytorch
 
 {: .fs-6 .fw-300 }

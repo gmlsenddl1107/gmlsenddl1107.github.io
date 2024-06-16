@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serving
-nav_order: 2
+title: docker
+nav_order: 6
 has_children: true
-permalink: /docs/serving
+permalink: /docs/docker
 ---
 
-# Serving
+# docker
 
 {: .fs-6 .fw-300 }

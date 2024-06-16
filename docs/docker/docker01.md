@@ -1,8 +1,8 @@
 ---
 layout: default
-title: pytorch 01
-parent: pytorch
+title: docker 01
+parent: docker
 nav_order: 1
 ---
 
-pytorch 01
+# docker 01
