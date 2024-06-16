@@ -1,8 +1,8 @@
 ---
+title: NLP
 layout: default
-title: AI 02
 parent: AI
-nav_order: 2
+has_children: true
 ---
 
-AI 02
+# NLP
