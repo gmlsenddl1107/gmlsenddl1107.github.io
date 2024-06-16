@@ -1,11 +1,11 @@
 ---
+title: 기초
 layout: default
-title: Serving
-nav_order: 2
+parent: AI
 has_children: true
-permalink: /docs/serving
+nav_order: 2
 ---
 
-# Serving
+# 기초
 
 {: .fs-6 .fw-300 }
