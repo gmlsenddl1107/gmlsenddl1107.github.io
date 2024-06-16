@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Serving
-nav_order: 2
+title: AI
+nav_order: 3
 has_children: true
-permalink: /docs/serving
+permalink: /docs/ai
 ---
 
-# Serving
+# AI
 
 {: .fs-6 .fw-300 }
