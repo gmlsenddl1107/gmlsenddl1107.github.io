@@ -41,14 +41,14 @@ chain = prompt | model | output_parser
 output = chain.invoke({"user_utterance":"hello"})
 ```
 
-| 기호를 통해 서로 다른 구성 요소를 연결하고 각 요소의 output을 다음 요소의 input으로 사용
+`|` 기호를 통해 서로 다른 구성 요소를 연결하고 각 요소의 output을 다음 요소의 input으로 사용
 
 # 의문점
 
-처음 LCEL을 접했을 때 가장 이해가 어려웠던 부분이 | 로 chain 이 연결되는 부분이였다.
+처음 LCEL을 접했을 때 가장 이해가 어려웠던 부분이 `|` 로 chain 이 연결되는 부분이였다.
 
 **의문1. 어떻게 구현되어 있는건지**  
-runnable 프로토콜을 구현하여 | 로 chain을 구성하였다고 하는데 도대체 어떻게 동작하고 어떻게 구현을 한지 감이 잡히지 않았다.
+runnable 프로토콜을 구현하여 `|` 로 chain을 구성하였다고 하는데 도대체 어떻게 동작하고 어떻게 구현을 한지 감이 잡히지 않았다.
 
 [2024.04.21 - \[ML SYSTEM 설계\] - LCEL (Langchain) - 의문1. 어떻게 구현되어 있는건지](https://cheer-up-programmer.tistory.com/270)
 
