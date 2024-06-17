@@ -7,13 +7,13 @@ nav_order: 2
 이번 글에서는 LCEL에 대한 아래 의문점 중 1번에 대해 다룰 예정이다.
 
 **의문1. 어떻게 구현되어 있는건지**  
-runnable 프로토콜을 구현하여 | 로 chain을 구성하였다고 하는데 도대체 어떻게 동작하고 어떻게 구현을 한지 감이 잡히지 않았다.
+runnable 프로토콜을 구현하여 `|` 로 chain을 구성하였다고 하는데 도대체 어떻게 동작하고 어떻게 구현을 한지 감이 잡히지 않았다.
 
 ```
 chain = prompt | model | output_parser 
 ```
 
-도대체 어떻게 구현되었길래 | 기호로 chain을 만들었다는 것일까?
+도대체 어떻게 구현되었길래 `|` 기호로 chain을 만들었다는 것일까?
 
 # 코드 까보기
 
@@ -47,7 +47,7 @@ python에는 매직 메소드가 있는데 그 중 \_\_or\_\_를 custom하게 �
         return RunnableSequence(self, coerce_to_runnable(other))
 ```
 
-other 는 | 기준 오른쪽에 위치한 아이로 \_\_or\_\_이 호출된 아이와 함께 합쳐져서 RunnableSequence로 들어가게 된다.
+other 는 `|` 기준 오른쪽에 위치한 아이로 \_\_or\_\_이 호출된 아이와 함께 합쳐져서 RunnableSequence로 들어가게 된다.
 
 ### Runnable의 \_\_or\_\_ 의 chaining 과정 해석
 
@@ -55,7 +55,7 @@ other 는 | 기준 오른쪽에 위치한 아이로 \_\_or\_\_이 호출된 아�
 chain = prompt | model  
 ```
 
-위 예시 기준으로는 "Prompt | model" 이 호출되면서 other에는 model이 들어가게되고 Prompt와 model이 chainning된 RunnableSequence를 return하게 된다.( Prompt는 runnable을 상속한 객체 )
+위 예시 기준으로는 "Prompt `|` model" 이 호출되면서 other에는 model이 들어가게되고 Prompt와 model이 chainning된 RunnableSequence를 return하게 된다.( Prompt는 runnable을 상속한 객체 )
 
 \*\*coerce\_to\_runnable 함수  
 : type을 확인하여 generator나 callable, dict을 전부 runnable 객체로 바꾸어 주는 역할을 해준다.
@@ -63,7 +63,7 @@ chain = prompt | model
 ## RunnableSequence, RunnableParallel  등
 
 Runnable들을 실제로 chaining하는 역할을 한다.  
-기본적으로 "|"로 chaining을 하게 되면 기본적으로 RunnableSequence 객체가 된다.  
+기본적으로 `|`로 chaining을 하게 되면 기본적으로 RunnableSequence 객체가 된다.  
 RunnableSequence가 chaining한 runnable 객체를 구동하는 역할을 하는 메인인 것으로 확인된다.
 
 ### RunnableSequence
@@ -113,11 +113,11 @@ RunnableSequence는 steps\_flat List에 runnable 객체를 담아 실행 순서 
 chain = prompt | model | output_parser 
 ```
 
-"|"로 chaining을 하게 되면 기본적으로 RunnableSequence 객체가 된다.  
+`|`로 chaining을 하게 되면 기본적으로 RunnableSequence 객체가 된다.  
 즉, 위 코드의 chain 변수는 RunnableSequence 객체이다.
 
-Prompt는 runnable을 상속한 객체이고 "Prompt | model" 이 호출되면서 other에는 model이 들어가게되고 Prompt와 model이 chainning된 RunnableSequence를 return하게 된다. 여기서는 return된 RunnableSequence를 A 라고 하자.  
-그러면 그 다음으로는 A | output\_parser가 되는데 other에 output\_parser가 들어가고 prompt, model, output\_parser가 chaining 된 RunnableSequence를 return하게 된다.(RunnableSequence은 runnable을 상속하고 있다.)
+Prompt는 runnable을 상속한 객체이고 "Prompt `|` model" 이 호출되면서 other에는 model이 들어가게되고 Prompt와 model이 chainning된 RunnableSequence를 return하게 된다. 여기서는 return된 RunnableSequence를 A 라고 하자.  
+그러면 그 다음으로는 A `|` output\_parser가 되는데 other에 output\_parser가 들어가고 prompt, model, output\_parser가 chaining 된 RunnableSequence를 return하게 된다.(RunnableSequence은 runnable을 상속하고 있다.)
 
 RunnableSequence의 \_\_or\_\_함수는 Runnable의 \_\_or\_\_ 함수와 비슷하며  많은 runnable들을 순서에 맞게 처리할 수 있게 first,middle,last로 구분해놓고있다.   
 아래는 RunnableSequence의 \_\_or\_\_함수이다.
