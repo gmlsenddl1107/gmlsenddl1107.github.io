@@ -1,8 +1,9 @@
 ---
 layout: default
 title: LCEL (Langchain) - 의문1. 어떻게 구현되어 있는건지
-parent: Server
-nav_order: 2
+parent: RAG
+grand_parent: AI
+nav_order: 4
 ---
 이번 글에서는 LCEL에 대한 아래 의문점 중 1번에 대해 다룰 예정이다.
 

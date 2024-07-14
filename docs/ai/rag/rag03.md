@@ -1,8 +1,9 @@
 ---
 layout: default
 title: LCEL (Langchain) - 시작하기
-parent: Server
-nav_order: 1
+parent: RAG
+grand_parent: AI
+nav_order: 3
 ---
 
 # LCEL (Langchain) - 시작하기
