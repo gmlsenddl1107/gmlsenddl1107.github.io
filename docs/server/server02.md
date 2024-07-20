@@ -1,9 +1,11 @@
 ---
-title: BigQuery
+title: BigTable
 layout: default
 parent: Server
 nav_order: 2
+
 ---
+
 # Bigtable
 
 NOSQL Key-Value 데이터 베이스 READ WRITE가 빠르다
