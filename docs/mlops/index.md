@@ -1,11 +1,11 @@
 ---
 layout: default
-title: GCP
-nav_order: 10
+title: MLOPs
+nav_order: 4
 has_children: true
-permalink: /docs/gcp
+permalink: /docs/mlops
 ---
 
-# GCP
+# MLOPs
 
 {: .fs-6 .fw-300 }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Docker
-nav_order: 6
+nav_order: 9
 has_children: true
 permalink: /docs/docker
 ---
