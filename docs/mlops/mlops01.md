@@ -1,9 +1,11 @@
 ---
 layout: default
 title: AutoML
-parent: Serving
-nav_order: 4
+parent: MLOPs
+nav_order: 1
+
 ---
+
 # AutoML
 
 머신러닝 모델링이나 모델 학습을 자동화하는 일
