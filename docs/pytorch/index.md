@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Pytorch
 nav_order: 7
@@ -8,4 +8,4 @@ permalink: /docs/pytorch
 
 # Pytorch
 
-{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 } -->
